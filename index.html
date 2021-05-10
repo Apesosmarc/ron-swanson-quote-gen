@@ -8,6 +8,9 @@
     <title>Ron Swanson Quote Generator</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Tinos&display=swap" rel="stylesheet">
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.0/axios.min.js"></script>
+
 </head>
 <body>
     <div class="wrapper">
@@ -16,16 +19,25 @@
                 <img alt="swanson portrait" class="portrait" width=280px src="/images/0ed80dea3bfc9e508c4dec0785687a07.jpg" class="ron-pic"/>
             </figure>
             <section class="quote-sec">
-                <img height= 150px src="images/quotationmark.png"/>
-                <h1>this is a ron swanson quote</h1>
+                <img class="quotemark" height= 150px src="images/quotationmark.png"/>
+                <div class="quotediv">
+                    <h1 id="swansonQuote">this is a ron swanson quote</h1>
+                    <h2 class="attrib">— Ron Swanson, Director of the Pawnee, Indiana Parks and Recreation Department</h1>
+                </div>
+    
             </section>
             <section class="attrib-section">
-                <h2 class="">— Ron Swanson, Director of the Pawnee, Indiana Parks and Recreation Department</h1>
+    
             </section>
            
         </article>
+
+        <button>FUCK IT</button>
    
 
     </div>
+
+    <script src="app.js"></script>
+    
 </body>
 </html>

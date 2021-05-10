@@ -44,6 +44,16 @@ h1 {
   align-items: center;
 }
 
-.attrib-section {
-  text-align: center;
+.attrib {
+  text-align: right;
+}
+
+.quotediv {
+  margin-top: 25px;
+  max-width: 900px;
+  min-width: 900px;
+}
+
+.quotemark {
+  align-self: flex-start;
 }
