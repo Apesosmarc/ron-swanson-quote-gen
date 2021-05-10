@@ -1,0 +1,49 @@
+* {
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: "tinos", Times, serif;
+  background-color: #0a2a66;
+  color: #cda893;
+}
+
+figure {
+  display: flex;
+}
+
+article {
+  margin-top: 6em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* texts */
+
+h1 {
+  font-size: 2rem;
+}
+
+.wrapper {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.portrait {
+  border-spacing: 10px;
+  border: 1px #cda893 solid;
+  border-style: double;
+  padding: 10px;
+}
+
+.quote-sec {
+  display: flex;
+  align-items: center;
+}
+
+.attrib-section {
+  text-align: center;
+}
