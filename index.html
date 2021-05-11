@@ -12,32 +12,34 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.0/axios.min.js"></script>
 
 </head>
-<body>
+<body onload="updateQuote()">
     <div class="wrapper">
         <article>
             <figure>
-                <img alt="swanson portrait" class="portrait" width=280px src="/images/0ed80dea3bfc9e508c4dec0785687a07.jpg" class="ron-pic"/>
+                <a href="https://www.deviantart.com/angieramone/art/Ron-Swanson-251345222" target="_blank">
+                    <img alt="swanson portrait" class="portrait" width=280px src="/images/0ed80dea3bfc9e508c4dec0785687a07.jpg" class="ron-pic"/>
+                </a>
+              
             </figure>
             <section class="quote-sec">
                 <img class="quotemark" height= 150px src="images/quotationmark.png"/>
                 <div class="quotediv">
-                    <h1 id="swansonQuote">this is a ron swanson quote</h1>
-                    <h2 class="attrib">— Ron Swanson, Director of the Pawnee, Indiana Parks and Recreation Department</h1>
+                    <strong id="swansonQuote"></strong>
+                    <h3 class="attrib">— Ron Swanson, Director of the Pawnee, Indiana Parks and Recreation Department</h1>
+                        
                 </div>
-    
-            </section>
-            <section class="attrib-section">
-    
-            </section>
-           
+            </section> 
         </article>
-
-        <button>FUCK IT</button>
-   
-
+        <section class="btn-section">
+            <button>New Quote</button>
+        </section>
     </div>
-
-    <script src="app.js"></script>
     
+    <footer>
+        <li> // Uses jamesseanwright's <a href="https://github.com/jamesseanwright/ron-swanson-quotes">Ron Swanson Quote API </a></li>
+        <li> // Credit to <a href="https://www.deviantart.com/angieramone">angieramone</a> for Ron Swanson portrait.</li>
+        
+    <script src="app.js"></script>
+    </footer>   
 </body>
 </html>

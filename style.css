@@ -1,6 +1,7 @@
 * {
   box-sizing: border-box;
   overflow-x: hidden;
+  margin: 0;
 }
 
 body {
@@ -21,14 +22,16 @@ article {
   flex-direction: column;
 }
 
-/* texts */
+/* text */
 
-h1 {
-  font-size: 2rem;
+#swansonQuote {
+  font-size: 1.8rem;
+  min-height: 65px;
+  line-height: 1.4;
 }
 
 .wrapper {
-  width: 70%;
+  width: 90%;
   margin: 0 auto;
 }
 
@@ -46,14 +49,93 @@ h1 {
 
 .attrib {
   text-align: right;
+  opacity: 0.8;
+  margin-top: 1em;
 }
 
 .quotediv {
-  margin-top: 25px;
+  margin-top: 60px;
   max-width: 900px;
   min-width: 900px;
+  max-height: 250px;
+  min-height: 200px;
 }
 
 .quotemark {
   align-self: flex-start;
+}
+
+.btn-section {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+button {
+  padding: 20px 50px;
+  background-color: #cda893;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 1.3em;
+}
+
+button:active {
+  background-color: #a94207;
+}
+
+a {
+  color: #a94207;
+}
+
+footer {
+  background-color: #011844;
+  margin-top: 4em;
+  height: auto;
+  padding: 3em 3em;
+  text-align: center;
+}
+footer li {
+  list-style: none;
+  opacity: 0.8;
+  margin-top: 0.5em;
+}
+
+@media (max-width: 1100px) {
+  .wrapper {
+  }
+  .quote-sec {
+    font-size: 0.8rem;
+    flex-direction: column;
+  }
+  .quotediv {
+    margin-top: 5px;
+    max-width: auto;
+    min-width: auto;
+  }
+  .quotemark {
+    margin: 0 0 -15px -15px;
+  }
+  #swansonQuote {
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 700px) {
+  .quote-sec {
+    flex-direction: column;
+  }
+  .quotediv {
+    margin-top: 5px;
+    max-width: auto;
+    min-width: auto;
+  }
+  .quotemark {
+    margin: 0 0 -15px -15px;
+    align-self: auto;
+  }
+  #swansonQuote {
+    font-size: 1.2rem;
+  }
+  button {
+    margin: 0;
+  }
 }
